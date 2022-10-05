@@ -42,22 +42,55 @@
 		"list": [
 			{
 				"pagePath": "pages/home/home",
-				"text": "首页"
+				"text": "首页",
+				"iconPath": "static/icon/index.png",
+				"selectedIconPath": "static/icon/index-s.png"
 			},
 			{
 				"pagePath": "pages/cate/cate",
-				"text": "分类"
+				"text": "分类",
+				"iconPath": "static/icon/category.png",
+				"selectedIconPath": "static/icon/category-s.png"
 			},
 			{
 				"pagePath": "pages/cart/cart",
-				"text": "购物车"
+				"text": "购物车",
+				"iconPath": "static/icon/cart.png",
+				"selectedIconPath": "static/icon/cart-s.png"
 			},
 			{
 				"pagePath": "pages/my/my",
-				"text": "我的"
+				"text": "我的",
+				"iconPath": "static/icon/my.png",
+				"selectedIconPath": "static/icon/my-s.png"
 			}
 		]
 	},
+	// 配置分包
+	"subPackages": [
+		{
+			"root":"subpkg",
+			"pages": [{
+                    "path" : "goods_detail/goods_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		}
+	],
 	"condition": { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)
 		"list": [{
